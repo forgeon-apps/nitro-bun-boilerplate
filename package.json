@@ -1,0 +1,13 @@
+{
+  "name": "forgeon-nitro-bun-playground",
+  "private": true,
+  "scripts": {
+    "build": "nitro build",
+    "dev": "nitro dev",
+    "prepare": "nitro prepare",
+    "preview": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "nitropack": "latest"
+  }
+}
