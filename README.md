@@ -4,11 +4,13 @@ This directory is a brief example of [Nitro](https://nitro.build/) and [Bun](htt
 
 ## Deploy Your Own
 
-Deploy your own Nitro project with Vercel and Bun.
+Deploy your own Nitro project with Forgeon and Bun.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/nitro-bun&template=nitro)
+Deploy the example using [Forgeon](https://forgeon.io?utm_source=github&utm_medium=readme&utm_campaign=forgeon-examples):
 
-Live Example: https://example-nitro-bun.vercel.app/
+[![Deploy with Forgeon](https://forgeon.io/images/button-deploy/png/deploy-to-forgeon-12.png)](https://forgeon.io/projects?import=1&no_upload=1&auto=0&git_url=https%3A%2F%2Fgithub.com%2Fforgeon-apps%2Fnitro-bun-boilerplate)
+
+Live Example: https://example-nitro-bun.forgeon.dev/
 
 ## Developing
 
