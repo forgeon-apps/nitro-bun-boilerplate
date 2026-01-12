@@ -1,0 +1,23 @@
+{
+  "schema_version": "v1",
+  "framework": "nitro",
+  "type": "server",
+  "build_system": "nixpacks",
+  "deployment_target": "docker",
+  "runtime": "bun",
+  "version": ">=1.1.0",
+  "port": 3000,
+
+  "build": "bun --version && (bun install --no-save || bun install) && if bun run -s build >/dev/null 2>&1; then bun run build; else echo \"[forgeon] missing script: build (expected nitro build)\"; exit 1; fi",
+
+  "start": "if bun run -s preview >/dev/null 2>&1; then bun run preview; else if [ -f .output/server/index.mjs ]; then node .output/server/index.mjs; else echo \"[forgeon] missing script: preview and missing entry: .output/server/index.mjs\"; exit 1; fi; fi",
+
+  "build_meta": {
+    "pm": "bun",
+    "build_script": "build",
+    "start_script": "preview",
+    "entry": ".output/server/index.mjs",
+    "output_dir": ".output",
+    "notes": "Nitro output is .output; start via preview script or node .output/server/index.mjs"
+  }
+}
