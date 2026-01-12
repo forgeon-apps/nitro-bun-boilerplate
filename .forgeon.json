@@ -8,9 +8,8 @@
   "version": ">=1.1.0",
   "port": 3000,
 
-  "build": "bun --version && (bun install --no-save || bun install) && if bun run -s build >/dev/null 2>&1; then bun run build; else echo \"[forgeon] missing script: build (expected nitro build)\"; exit 1; fi",
-
-  "start": "if bun run -s preview >/dev/null 2>&1; then bun run preview; else if [ -f .output/server/index.mjs ]; then node .output/server/index.mjs; else echo \"[forgeon] missing script: preview and missing entry: .output/server/index.mjs\"; exit 1; fi; fi",
+  "build": "bun run build",
+  "start": "bun run preview",
 
   "build_meta": {
     "pm": "bun",
